@@ -1,0 +1,544 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		20B9A6AC18D042C10076AB45 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20B9A6AB18D042C10076AB45 /* Foundation.framework */; };
+		20B9A6AE18D042C10076AB45 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20B9A6AD18D042C10076AB45 /* CoreGraphics.framework */; };
+		20B9A6B018D042C10076AB45 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20B9A6AF18D042C10076AB45 /* UIKit.framework */; };
+		20B9A6B618D042C10076AB45 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 20B9A6B418D042C10076AB45 /* InfoPlist.strings */; };
+		20B9A6B818D042C10076AB45 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B9A6B718D042C10076AB45 /* main.m */; };
+		20B9A6BC18D042C10076AB45 /* ARMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B9A6BB18D042C10076AB45 /* ARMAppDelegate.m */; };
+		20B9A6C218D042C10076AB45 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20B9A6C018D042C10076AB45 /* Main_iPad.storyboard */; };
+		20B9A6C518D042C10076AB45 /* ARMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B9A6C418D042C10076AB45 /* ARMViewController.m */; };
+		20B9A6C718D042C10076AB45 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20B9A6C618D042C10076AB45 /* Images.xcassets */; };
+		20B9A6CE18D042C10076AB45 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20B9A6CD18D042C10076AB45 /* XCTest.framework */; };
+		20B9A6CF18D042C10076AB45 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20B9A6AB18D042C10076AB45 /* Foundation.framework */; };
+		20B9A6D018D042C10076AB45 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20B9A6AF18D042C10076AB45 /* UIKit.framework */; };
+		20B9A6D818D042C10076AB45 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 20B9A6D618D042C10076AB45 /* InfoPlist.strings */; };
+		20B9A6DA18D042C10076AB45 /* N2048Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B9A6D918D042C10076AB45 /* N2048Tests.m */; };
+		20B9A6E418D043900076AB45 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20B9A6E318D043900076AB45 /* SpriteKit.framework */; };
+		20B9A6E718D046000076AB45 /* ARMBoardScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B9A6E618D046000076AB45 /* ARMBoardScene.m */; };
+		20B9A6EC18D059F00076AB45 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B9A6EB18D059F00076AB45 /* UIColor+Hex.m */; };
+		20DA4B2E18D07D8400B16BBA /* ARMBoardIndex.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DA4B2D18D07D8400B16BBA /* ARMBoardIndex.m */; };
+		58C5F063CBA0E1FC701C260A /* ARMCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C5F9D6AA04DB3DBF82228C /* ARMCell.m */; };
+		58C5F38D5543E7E207742AFE /* ARMTileItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C5F47B89E2234DFEE65A34 /* ARMTileItem.m */; };
+		58C5F74A41F7E0CC14C081CD /* ARMTile.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C5FAE4DC64A593210D9AB7 /* ARMTile.m */; };
+		58C5FD7A9408422FC89640D0 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 58C5F2940B923A1377B2E966 /* .gitignore */; };
+		58C5FDD026E6CDC66CF03F34 /* ARMGrid.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C5F61E4A6AB5EBCAE8A7E5 /* ARMGrid.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		20B9A6D118D042C10076AB45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20B9A6A018D042C10076AB45 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 20B9A6A718D042C10076AB45;
+			remoteInfo = N2048;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		20B9A6A818D042C10076AB45 /* N2048.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = N2048.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		20B9A6AB18D042C10076AB45 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		20B9A6AD18D042C10076AB45 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		20B9A6AF18D042C10076AB45 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		20B9A6B318D042C10076AB45 /* N2048-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "N2048-Info.plist"; sourceTree = "<group>"; };
+		20B9A6B518D042C10076AB45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		20B9A6B718D042C10076AB45 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		20B9A6B918D042C10076AB45 /* N2048-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "N2048-Prefix.pch"; sourceTree = "<group>"; };
+		20B9A6BA18D042C10076AB45 /* ARMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARMAppDelegate.h; sourceTree = "<group>"; };
+		20B9A6BB18D042C10076AB45 /* ARMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARMAppDelegate.m; sourceTree = "<group>"; };
+		20B9A6C118D042C10076AB45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		20B9A6C318D042C10076AB45 /* ARMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARMViewController.h; sourceTree = "<group>"; };
+		20B9A6C418D042C10076AB45 /* ARMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARMViewController.m; sourceTree = "<group>"; };
+		20B9A6C618D042C10076AB45 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		20B9A6CC18D042C10076AB45 /* N2048Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = N2048Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		20B9A6CD18D042C10076AB45 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		20B9A6D518D042C10076AB45 /* N2048Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "N2048Tests-Info.plist"; sourceTree = "<group>"; };
+		20B9A6D718D042C10076AB45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		20B9A6D918D042C10076AB45 /* N2048Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = N2048Tests.m; sourceTree = "<group>"; };
+		20B9A6E318D043900076AB45 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		20B9A6E518D046000076AB45 /* ARMBoardScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARMBoardScene.h; sourceTree = "<group>"; };
+		20B9A6E618D046000076AB45 /* ARMBoardScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARMBoardScene.m; sourceTree = "<group>"; };
+		20B9A6EA18D059F00076AB45 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		20B9A6EB18D059F00076AB45 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		20DA4B2C18D07D8400B16BBA /* ARMBoardIndex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARMBoardIndex.h; sourceTree = "<group>"; };
+		20DA4B2D18D07D8400B16BBA /* ARMBoardIndex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARMBoardIndex.m; sourceTree = "<group>"; };
+		58C5F2940B923A1377B2E966 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = file.gitignore; path = .gitignore; sourceTree = "<group>"; };
+		58C5F47B89E2234DFEE65A34 /* ARMTileItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARMTileItem.m; sourceTree = "<group>"; };
+		58C5F5FB53E12319BA94B0E6 /* ARMTileItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARMTileItem.h; sourceTree = "<group>"; };
+		58C5F61E4A6AB5EBCAE8A7E5 /* ARMGrid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARMGrid.m; sourceTree = "<group>"; };
+		58C5F70E693549000B07BF1E /* ARMCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARMCell.h; sourceTree = "<group>"; };
+		58C5F9D6AA04DB3DBF82228C /* ARMCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARMCell.m; sourceTree = "<group>"; };
+		58C5FAB5D202557B6E4FD716 /* ARMTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARMTile.h; sourceTree = "<group>"; };
+		58C5FAE4DC64A593210D9AB7 /* ARMTile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARMTile.m; sourceTree = "<group>"; };
+		58C5FC755EA7AC487743EF6A /* ARMGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARMGrid.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		20B9A6A518D042C10076AB45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20B9A6E418D043900076AB45 /* SpriteKit.framework in Frameworks */,
+				20B9A6AE18D042C10076AB45 /* CoreGraphics.framework in Frameworks */,
+				20B9A6B018D042C10076AB45 /* UIKit.framework in Frameworks */,
+				20B9A6AC18D042C10076AB45 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20B9A6C918D042C10076AB45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20B9A6CE18D042C10076AB45 /* XCTest.framework in Frameworks */,
+				20B9A6D018D042C10076AB45 /* UIKit.framework in Frameworks */,
+				20B9A6CF18D042C10076AB45 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		20B9A69F18D042C10076AB45 = {
+			isa = PBXGroup;
+			children = (
+				20B9A6B118D042C10076AB45 /* N2048 */,
+				20B9A6D318D042C10076AB45 /* N2048Tests */,
+				20B9A6AA18D042C10076AB45 /* Frameworks */,
+				20B9A6A918D042C10076AB45 /* Products */,
+				58C5F2940B923A1377B2E966 /* .gitignore */,
+			);
+			sourceTree = "<group>";
+		};
+		20B9A6A918D042C10076AB45 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				20B9A6A818D042C10076AB45 /* N2048.app */,
+				20B9A6CC18D042C10076AB45 /* N2048Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		20B9A6AA18D042C10076AB45 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20B9A6E318D043900076AB45 /* SpriteKit.framework */,
+				20B9A6AB18D042C10076AB45 /* Foundation.framework */,
+				20B9A6AD18D042C10076AB45 /* CoreGraphics.framework */,
+				20B9A6AF18D042C10076AB45 /* UIKit.framework */,
+				20B9A6CD18D042C10076AB45 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		20B9A6B118D042C10076AB45 /* N2048 */ = {
+			isa = PBXGroup;
+			children = (
+				20DA4B2B18D07D6D00B16BBA /* Game */,
+				20B9A6E818D059B20076AB45 /* Util */,
+				20B9A6BA18D042C10076AB45 /* ARMAppDelegate.h */,
+				20B9A6BB18D042C10076AB45 /* ARMAppDelegate.m */,
+				20B9A6C018D042C10076AB45 /* Main_iPad.storyboard */,
+				20B9A6C318D042C10076AB45 /* ARMViewController.h */,
+				20B9A6C418D042C10076AB45 /* ARMViewController.m */,
+				20B9A6C618D042C10076AB45 /* Images.xcassets */,
+				20B9A6B218D042C10076AB45 /* Supporting Files */,
+				20B9A6E518D046000076AB45 /* ARMBoardScene.h */,
+				20B9A6E618D046000076AB45 /* ARMBoardScene.m */,
+			);
+			path = N2048;
+			sourceTree = "<group>";
+		};
+		20B9A6B218D042C10076AB45 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				20B9A6B318D042C10076AB45 /* N2048-Info.plist */,
+				20B9A6B418D042C10076AB45 /* InfoPlist.strings */,
+				20B9A6B718D042C10076AB45 /* main.m */,
+				20B9A6B918D042C10076AB45 /* N2048-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		20B9A6D318D042C10076AB45 /* N2048Tests */ = {
+			isa = PBXGroup;
+			children = (
+				20B9A6D918D042C10076AB45 /* N2048Tests.m */,
+				20B9A6D418D042C10076AB45 /* Supporting Files */,
+			);
+			path = N2048Tests;
+			sourceTree = "<group>";
+		};
+		20B9A6D418D042C10076AB45 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				20B9A6D518D042C10076AB45 /* N2048Tests-Info.plist */,
+				20B9A6D618D042C10076AB45 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		20B9A6E818D059B20076AB45 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				20B9A6EA18D059F00076AB45 /* UIColor+Hex.h */,
+				20B9A6EB18D059F00076AB45 /* UIColor+Hex.m */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		20DA4B2B18D07D6D00B16BBA /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				20DA4B2C18D07D8400B16BBA /* ARMBoardIndex.h */,
+				20DA4B2D18D07D8400B16BBA /* ARMBoardIndex.m */,
+				58C5FAE4DC64A593210D9AB7 /* ARMTile.m */,
+				58C5FAB5D202557B6E4FD716 /* ARMTile.h */,
+				58C5F61E4A6AB5EBCAE8A7E5 /* ARMGrid.m */,
+				58C5FC755EA7AC487743EF6A /* ARMGrid.h */,
+				58C5F9D6AA04DB3DBF82228C /* ARMCell.m */,
+				58C5F70E693549000B07BF1E /* ARMCell.h */,
+				58C5F47B89E2234DFEE65A34 /* ARMTileItem.m */,
+				58C5F5FB53E12319BA94B0E6 /* ARMTileItem.h */,
+			);
+			name = Game;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		20B9A6A718D042C10076AB45 /* N2048 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20B9A6DD18D042C10076AB45 /* Build configuration list for PBXNativeTarget "N2048" */;
+			buildPhases = (
+				20B9A6A418D042C10076AB45 /* Sources */,
+				20B9A6A518D042C10076AB45 /* Frameworks */,
+				20B9A6A618D042C10076AB45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = N2048;
+			productName = N2048;
+			productReference = 20B9A6A818D042C10076AB45 /* N2048.app */;
+			productType = "com.apple.product-type.application";
+		};
+		20B9A6CB18D042C10076AB45 /* N2048Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20B9A6E018D042C10076AB45 /* Build configuration list for PBXNativeTarget "N2048Tests" */;
+			buildPhases = (
+				20B9A6C818D042C10076AB45 /* Sources */,
+				20B9A6C918D042C10076AB45 /* Frameworks */,
+				20B9A6CA18D042C10076AB45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				20B9A6D218D042C10076AB45 /* PBXTargetDependency */,
+			);
+			name = N2048Tests;
+			productName = N2048Tests;
+			productReference = 20B9A6CC18D042C10076AB45 /* N2048Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		20B9A6A018D042C10076AB45 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ARM;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Artem Medeusheyev";
+				TargetAttributes = {
+					20B9A6CB18D042C10076AB45 = {
+						TestTargetID = 20B9A6A718D042C10076AB45;
+					};
+				};
+			};
+			buildConfigurationList = 20B9A6A318D042C10076AB45 /* Build configuration list for PBXProject "N2048" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 20B9A69F18D042C10076AB45;
+			productRefGroup = 20B9A6A918D042C10076AB45 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				20B9A6A718D042C10076AB45 /* N2048 */,
+				20B9A6CB18D042C10076AB45 /* N2048Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		20B9A6A618D042C10076AB45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20B9A6C218D042C10076AB45 /* Main_iPad.storyboard in Resources */,
+				20B9A6C718D042C10076AB45 /* Images.xcassets in Resources */,
+				20B9A6B618D042C10076AB45 /* InfoPlist.strings in Resources */,
+				58C5FD7A9408422FC89640D0 /* .gitignore in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20B9A6CA18D042C10076AB45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20B9A6D818D042C10076AB45 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		20B9A6A418D042C10076AB45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20B9A6E718D046000076AB45 /* ARMBoardScene.m in Sources */,
+				20B9A6C518D042C10076AB45 /* ARMViewController.m in Sources */,
+				20B9A6B818D042C10076AB45 /* main.m in Sources */,
+				20B9A6EC18D059F00076AB45 /* UIColor+Hex.m in Sources */,
+				20DA4B2E18D07D8400B16BBA /* ARMBoardIndex.m in Sources */,
+				20B9A6BC18D042C10076AB45 /* ARMAppDelegate.m in Sources */,
+				58C5F74A41F7E0CC14C081CD /* ARMTile.m in Sources */,
+				58C5FDD026E6CDC66CF03F34 /* ARMGrid.m in Sources */,
+				58C5F063CBA0E1FC701C260A /* ARMCell.m in Sources */,
+				58C5F38D5543E7E207742AFE /* ARMTileItem.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20B9A6C818D042C10076AB45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20B9A6DA18D042C10076AB45 /* N2048Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		20B9A6D218D042C10076AB45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 20B9A6A718D042C10076AB45 /* N2048 */;
+			targetProxy = 20B9A6D118D042C10076AB45 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		20B9A6B418D042C10076AB45 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20B9A6B518D042C10076AB45 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		20B9A6C018D042C10076AB45 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20B9A6C118D042C10076AB45 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		20B9A6D618D042C10076AB45 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20B9A6D718D042C10076AB45 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		20B9A6DB18D042C10076AB45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		20B9A6DC18D042C10076AB45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		20B9A6DE18D042C10076AB45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "N2048/N2048-Prefix.pch";
+				INFOPLIST_FILE = "N2048/N2048-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		20B9A6DF18D042C10076AB45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "N2048/N2048-Prefix.pch";
+				INFOPLIST_FILE = "N2048/N2048-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		20B9A6E118D042C10076AB45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/N2048.app/N2048";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "N2048/N2048-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "N2048Tests/N2048Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		20B9A6E218D042C10076AB45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/N2048.app/N2048";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "N2048/N2048-Prefix.pch";
+				INFOPLIST_FILE = "N2048Tests/N2048Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		20B9A6A318D042C10076AB45 /* Build configuration list for PBXProject "N2048" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20B9A6DB18D042C10076AB45 /* Debug */,
+				20B9A6DC18D042C10076AB45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20B9A6DD18D042C10076AB45 /* Build configuration list for PBXNativeTarget "N2048" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20B9A6DE18D042C10076AB45 /* Debug */,
+				20B9A6DF18D042C10076AB45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20B9A6E018D042C10076AB45 /* Build configuration list for PBXNativeTarget "N2048Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20B9A6E118D042C10076AB45 /* Debug */,
+				20B9A6E218D042C10076AB45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 20B9A6A018D042C10076AB45 /* Project object */;
+}
