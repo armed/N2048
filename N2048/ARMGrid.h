@@ -5,6 +5,7 @@
 
 #import <Foundation/Foundation.h>
 #import <SpriteKit/SpriteKit.h>
+#import "ARMColors.h"
 
 @interface ARMGrid : SKShapeNode
 @property CGFloat startX;

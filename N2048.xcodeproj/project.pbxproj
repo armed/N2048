@@ -77,6 +77,7 @@
 		58C5F9D6AA04DB3DBF82228C /* ARMCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARMCell.m; sourceTree = "<group>"; };
 		58C5FAB5D202557B6E4FD716 /* ARMTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARMTile.h; sourceTree = "<group>"; };
 		58C5FAE4DC64A593210D9AB7 /* ARMTile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARMTile.m; sourceTree = "<group>"; };
+		58C5FC40A32567373B91ED8E /* ARMColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARMColors.h; sourceTree = "<group>"; };
 		58C5FC755EA7AC487743EF6A /* ARMGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARMGrid.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -206,6 +207,7 @@
 				58C5F70E693549000B07BF1E /* ARMCell.h */,
 				58C5F47B89E2234DFEE65A34 /* ARMTileItem.m */,
 				58C5F5FB53E12319BA94B0E6 /* ARMTileItem.h */,
+				58C5FC40A32567373B91ED8E /* ARMColors.h */,
 			);
 			name = Game;
 			sourceTree = "<group>";

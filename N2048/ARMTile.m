@@ -4,19 +4,6 @@
 //
 
 #import "ARMTile.h"
-#import "UIColor+Hex.h"
-
-#define TILE_2_BG 0xeee4da
-#define TILE_4_BG 0xede0c8
-#define TILE_8_BG 0xf2b179
-#define TILE_16_BG 0xf59563
-#define TILE_32_BG 0xf67c5f
-#define TILE_64_BG 0xf65e3b
-#define TILE_128_BG 0xedcf72
-#define TILE_256_BG 0xedcc61
-#define TILE_512_BG 0xedc850
-#define TILE_1024_BG 0xedc53f
-#define TILE_2048_BG 0xedc22e
 
 @interface ARMTile ()
 @property(weak, nonatomic) ARMGrid *grid;
@@ -27,9 +14,9 @@
 
 @implementation ARMTile
 + (instancetype)initForGrid:(ARMGrid *)grid
-                       Row:(NSUInteger)r
-                       Col:(NSUInteger)c
-                       Val:(NSUInteger)v {
+                        Row:(NSUInteger)r
+                        Col:(NSUInteger)c
+                        Val:(NSUInteger)v {
     ARMTile *tile = [ARMTile node];
     tile.row = r;
     tile.col = c;
@@ -60,6 +47,16 @@
     } else/* if (v == 2048) */{
         tile.fillColor = tile.strokeColor = [UIColor colorFromHex:TILE_2048_BG];
     }
+
+    SKLabelNode *value = [SKLabelNode labelNodeWithFontNamed:@"Arial Bold"];
+    value.fontColor = [UIColor colorFromHex:(v > 4 ? LIGHT_FONT_COLOR : BASE_FONT_COLOR)];
+    value.horizontalAlignmentMode = SKLabelHorizontalAlignmentModeCenter;
+    value.verticalAlignmentMode = SKLabelVerticalAlignmentModeCenter;
+    value.fontSize = 34.0f;
+    value.position = CGPointMake(tile.size / 2, tile.size / 2);
+    value.text = [NSString stringWithFormat:@"%lu", (unsigned long) v];
+
+    [tile addChild:value];
 
     return tile;
 }

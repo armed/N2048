@@ -5,7 +5,6 @@
 
 #import "ARMTileItem.h"
 
-
 @implementation ARMTileItem
 + (instancetype)empty {
     return [[ARMTileItem alloc] init];

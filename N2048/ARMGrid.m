@@ -4,12 +4,9 @@
 //
 
 #import "ARMGrid.h"
-#import "UIColor+Hex.h"
 #import "ARMCell.h"
 #import "ARMTileItem.h"
 #import "ARMBoardIndex.h"
-
-#define BOARD_COLOR 0xbbada0
 
 @interface ARMGrid ()
 @property(nonatomic) NSArray *tileData;

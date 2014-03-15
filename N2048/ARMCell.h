@@ -8,6 +8,7 @@
 #import "ARMGrid.h"
 
 @interface ARMCell : SKShapeNode
+@property CGFloat size;
 + (instancetype)initForGrid:(ARMGrid *)grid
                          Row:(NSUInteger)r
                          Col:(NSUInteger)c;
