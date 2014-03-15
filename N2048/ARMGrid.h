@@ -12,5 +12,5 @@
 @property CGFloat startY;
 @property CGFloat size;
 
-+ (instancetype)initWithX:(CGFloat)x Y:(CGFloat)y Size:(CGFloat)size;
++ (instancetype)initWithX:(CGFloat)x y:(CGFloat)y size:(CGFloat)size;
 @end

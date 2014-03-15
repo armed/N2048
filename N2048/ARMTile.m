@@ -14,15 +14,15 @@
 
 @implementation ARMTile
 + (instancetype)initForGrid:(ARMGrid *)grid
-                        Row:(NSUInteger)r
-                        Col:(NSUInteger)c
-                        Val:(NSUInteger)v {
+                        row:(NSUInteger)r
+                        col:(NSUInteger)c
+                        val:(NSUInteger)v {
     ARMTile *tile = [ARMTile node];
     tile.row = r;
     tile.col = c;
     tile.value = v;
 
-    [tile initPathWithGrid:grid Row:r Col:c];
+    [tile initPathWithGrid:grid row:r col:c];
 
     if (v == 2) {
         tile.fillColor = tile.strokeColor = [UIColor colorFromHex:TILE_2_BG];

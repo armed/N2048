@@ -14,12 +14,12 @@
                         Row:(NSUInteger)r
                         Col:(NSUInteger)c {
     ARMCell *cell = [ARMCell node];
-    [cell initPathWithGrid:grid Row:r Col:c];
+    [cell initPathWithGrid:grid row:r col:c];
     cell.fillColor = cell.strokeColor = [UIColor colorFromHex:TILE_EMPTY_BG];
     return cell;
 }
 
-- (void)initPathWithGrid:(ARMGrid *)grid Row:(NSUInteger)r Col:(NSUInteger)c {
+- (void)initPathWithGrid:(ARMGrid *)grid row:(NSUInteger)r col:(NSUInteger)c {
     CGFloat cellMargin = grid.size * 0.03;
     self.size = (grid.size - cellMargin * 5) / 4;
     CGFloat tileX = (self.size + cellMargin) * c + grid.startX + cellMargin;

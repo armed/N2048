@@ -8,14 +8,9 @@
 
 #import "ARMBoardScene.h"
 #import "UIColor+Hex.h"
-#import "ARMBoardIndex.h"
 #import "ARMGrid.h"
 
 #define MARGIN 15
-#define BG_COLOR 0xfaf8ef
-#define BOARD_COLOR 0xbbada0
-
-
 
 @interface ARMBoardScene ()
 @property BOOL contentCreated;
@@ -23,12 +18,7 @@
 @property UISwipeGestureRecognizer *swipeRight;
 @property UISwipeGestureRecognizer *swipeUp;
 @property UISwipeGestureRecognizer *swipeDown;
-
-
 @property SKShapeNode *board;
-
-@property NSArray *boardFields;
-@property NSArray *oldBoardFields;
 @end
 
 @implementation ARMBoardScene
@@ -70,7 +60,7 @@
     CGFloat startY = MARGIN + (size.height - size.width) / 2;
     CGFloat boardSize = size.width - MARGIN * 2;
 
-    self.board = [ARMGrid initWithX:startX Y:startY Size:boardSize];
+    self.board = [ARMGrid initWithX:startX y:startY size:boardSize];
 }
 
 - (void)handleLeft {
@@ -87,31 +77,5 @@
 
 - (void)handleDown {
     NSLog(@"down");
-}
-
-- (NSMutableArray *)emptyFields {
-    NSMutableArray *fields = [NSMutableArray arrayWithCapacity:4 * 4];
-    for (uint r = 0; r < 4; r++) {
-        for (uint c = 0; c < 4; c++) {
-            if ([self.boardFields[r][c] intValue] == 0) {
-                [fields addObject:[ARMBoardIndex initWithRow:r Col:c]];
-            }
-        }
-    }
-    return fields;
-}
-
-- (void)addRandomTile {
-    NSMutableArray *fields = [self emptyFields];
-    NSUInteger max = [fields count];
-    NSUInteger index = arc4random_uniform(max);
-    ARMBoardIndex *bi = fields[index];
-    NSInteger twoOrFour = arc4random_uniform(10);
-    self.boardFields[bi.row][bi.col] = [NSNumber numberWithInt:(twoOrFour < 9 ? 2 : 4)];
-    [self showTileAtRow:bi.row col:bi.col];
-}
-
-- (void)showTileAtRow:(NSUInteger)row col:(NSUInteger)col {
-
 }
 @end

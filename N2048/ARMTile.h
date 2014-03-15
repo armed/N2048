@@ -10,7 +10,7 @@
 
 @interface ARMTile: ARMCell
 + (instancetype)initForGrid:(ARMGrid *)grid
-                         Row:(NSUInteger)r
-                         Col:(NSUInteger)c
-                         Val:(NSUInteger)v;
+                        row:(NSUInteger)r
+                        col:(NSUInteger)c
+                        val:(NSUInteger)v;
 @end

@@ -12,5 +12,5 @@
 @property NSUInteger row;
 @property NSUInteger col;
 
-+ (ARMBoardIndex *)initWithRow:(NSUInteger)row Col:(NSUInteger)col;
++ (ARMBoardIndex *)initWithRow:(NSUInteger)row col:(NSUInteger)col;
 @end

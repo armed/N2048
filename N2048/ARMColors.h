@@ -1,5 +1,6 @@
 #import "UIColor+Hex.h";
 
+#define BG_COLOR 0xfaf8ef
 #define BOARD_COLOR 0xbbada0
 
 #define TILE_EMPTY_BG 0xccc0b3

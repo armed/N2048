@@ -13,7 +13,7 @@
 @end
 
 @implementation ARMGrid
-+ (instancetype)initWithX:(CGFloat)x Y:(CGFloat)y Size:(CGFloat)size {
++ (instancetype)initWithX:(CGFloat)x y:(CGFloat)y size:(CGFloat)size {
     ARMGrid *grid = [ARMGrid node];
     grid.startX = x;
     grid.startY = y;
@@ -44,7 +44,7 @@
     for (uint r = 0; r < 4; r++) {
         for (uint c = 0; c < 4; c++) {
             if ([self.tileData[r][c] isEmpty]) {
-                [cells addObject:[ARMBoardIndex initWithRow:r Col:c]];
+                [cells addObject:[ARMBoardIndex initWithRow:r col:c]];
             }
         }
     }
@@ -58,7 +58,7 @@
     ARMBoardIndex *bi = cells[index];
     NSUInteger twoOrFour = arc4random_uniform(10);
     ARMTileItem *item = self.tileData[bi.row][bi.col];
-    item.tile = [ARMTile initForGrid:self Row:bi.row Col:bi.col Val:(twoOrFour < 9 ? 2 : 4)];
+    item.tile = [ARMTile initForGrid:self row:bi.row col:bi.col val:(twoOrFour < 9 ? 2 : 4)];
     [self addChild:item.tile];
 }
 @end

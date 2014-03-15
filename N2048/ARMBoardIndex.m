@@ -9,7 +9,7 @@
 #import "ARMBoardIndex.h"
 
 @implementation ARMBoardIndex
-+ (ARMBoardIndex *)initWithRow:(NSUInteger)row Col:(NSUInteger)col {
++ (ARMBoardIndex *)initWithRow:(NSUInteger)row col:(NSUInteger)col {
     ARMBoardIndex *index = [[ARMBoardIndex alloc] init];
     index.row = row;
     index.col = col;

@@ -12,5 +12,5 @@
 + (instancetype)initForGrid:(ARMGrid *)grid
                          Row:(NSUInteger)r
                          Col:(NSUInteger)c;
-- (void)initPathWithGrid:(ARMGrid *)grid Row:(NSUInteger)r Col:(NSUInteger)c;
+- (void)initPathWithGrid:(ARMGrid *)grid row:(NSUInteger)r col:(NSUInteger)c;
 @end
